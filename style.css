@@ -1,0 +1,91 @@
+body{
+    text-align: center;
+    background-color: #2D033B;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color:#810CA8;
+    margin: 0;
+    font-size: 20px;
+}
+
+h1{
+    color: #2D033B;
+    margin: 0;
+    /*font-size: 32px;
+    font-weight: bold;*/
+}
+p{
+    color: #7F8487;
+    font-size: 16px;
+    margin-bottom: 41px;
+}
+div{
+    background-color: #F2DFE2; 
+    width: 340px;  /* antes estava 400px (como o figma pedia) porém diminui por conta do padding. */
+    border-radius: 10px;
+    /* essas margens estão centralizando a div, porém o margin-top está apenas de improviso */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    /* cria espaçamentos em todo o div (espaço interno) ; porém, aumenta a largura da div. */
+    padding: 30px;
+    padding-bottom: 44px;
+    padding-top: 16px;
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #2D033B solid;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-type: none;
+    padding: 0%;
+    /*list-style-position: inside; (deixar as bolinhas dentro da caixa pós padding)*/
+}
+li{
+    margin-bottom: 5px; 
+}
+li a{
+    background-color: #2D033B;
+    color: white;
+    text-decoration: none;
+    display: block; /*fazendo o link se comportar como um bloco, assim, o link preenche a linha inteira. 
+    "ocupa toda a largura disponível*/
+    border-radius: 3px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+}
+li a:hover{
+    background-color: #E5B8F4;
+    color: #2D033B;
+}
+#coti{
+    color: #2D033B;
+}
+#coti:hover{
+    font-style: italic;
+}
+ul{
+    margin-bottom: 30px; /*ajeitando espaçamentos entre a lista e o link*/
+}
+
+/* MEDIA QUERY */
+/* Se a tela tiver menos de 500px */
+@media (max-width: 500px){
+
+    div{
+        width:300px;
+        padding: 15px;
+    }
+
+    img{
+        width: 70px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+}
